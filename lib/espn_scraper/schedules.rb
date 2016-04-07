@@ -48,15 +48,7 @@ module ESPN
       private
 
       def games_available?(markup, date)
-        if date <= Date.today
-          puts "ERROR: Digging Into Past Games Not Allowed"
-          false
-        elsif markup == nil
-          puts "ERROR: No Games Scheduled"
-          false
-        else
-          true
-        end
+        true
       end
 
       def markup_from_date(league, date)
